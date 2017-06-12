@@ -26,6 +26,7 @@ public class ClickCount extends AppCompatActivity {
         display(count);
     }
     public void reset(View view){
+        count =0;
         display(0);
     }
 }
