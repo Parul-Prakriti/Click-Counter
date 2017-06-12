@@ -14,11 +14,18 @@ public class ClickCount extends AppCompatActivity {
         setContentView(R.layout.activity_click_count);
     }
     private void display(int number){
-        TextView quaintityTextView = (TextView) findViewById(R.id.textView);
+        TextView quaintityTextView = (TextView) findViewById(R.id.display_count);
         quaintityTextView.setText(""+number);
     }
-    public void submitCount(View view){
+    public void increment(View view){
         count = count+1;
         display(count);
+    }
+    public void decrement(View view){
+        count = count-1;
+        display(count);
+    }
+    public void reset(View view){
+        display(0);
     }
 }
